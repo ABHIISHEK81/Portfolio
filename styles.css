@@ -1769,14 +1769,17 @@ h3 {
 }
 
 .animate-ready .reveal {
-  transform: translateY(26px) scale(0.985);
-  filter: blur(6px);
-  transition: opacity 760ms ease, transform 760ms cubic-bezier(.2,.7,.2,1), filter 760ms ease;
+  opacity: 0.15;
+  transform: translateY(20px);
+  filter: blur(3px);
+  transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1), filter 600ms ease;
 }
 
+.hero .reveal,
 .animate-ready .reveal.visible {
-  transform: translateY(0) scale(1);
-  filter: blur(0);
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
 }
 
 .skill-grid .reveal:nth-child(2),

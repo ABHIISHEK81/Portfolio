@@ -513,6 +513,14 @@ document.getElementById("questionForm").addEventListener("submit", (event) => {
 
 const revealElements = document.querySelectorAll(".reveal");
 
+// Immediately show elements in or near the viewport
+revealElements.forEach((el) => {
+  const rect = el.getBoundingClientRect();
+  if (rect.top < window.innerHeight + 100) {
+    el.classList.add("visible");
+  }
+});
+
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -521,12 +529,17 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05, rootMargin: "0px 0px 50px 0px" });
 
   revealElements.forEach((element) => observer.observe(element));
 } else {
   revealElements.forEach((element) => element.classList.add("visible"));
 }
+
+// Safety fallback: ensure all content becomes visible even if observer is delayed
+setTimeout(() => {
+  revealElements.forEach((element) => element.classList.add("visible"));
+}, 500);
 
 const canvas = document.getElementById("spaceCanvas");
 const ctx = canvas.getContext("2d");
