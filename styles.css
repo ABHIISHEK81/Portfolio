@@ -1909,3 +1909,247 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* ============================================================
+   Enhanced Portfolio Styling: Global Platforms, Experience,
+   Leadership, Collaborations, and Founder Fast-Track
+   ============================================================ */
+
+.profile-link-card.codechef { --profile-color: #d8a071; }
+.profile-link-card.codeforces { --profile-color: #5bb3ff; }
+.profile-link-card.hackerearth { --profile-color: #49c4e0; }
+.profile-link-card.catalyst { --profile-color: #f6d57a; }
+.profile-link-card.discord { --profile-color: #8c9eff; }
+.profile-link-card.scholar { --profile-color: #68b4ff; }
+.profile-link-card.gfg { --profile-color: #4dd281; }
+
+.timeline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(110, 231, 183, 0.12);
+  border: 1px solid rgba(110, 231, 183, 0.35);
+  color: var(--mint);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.timeline-details {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.timeline-details li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.timeline-details li strong {
+  color: #edf6f1;
+}
+
+.timeline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 7px 14px;
+  border: 1px solid rgba(110, 231, 183, 0.32);
+  border-radius: 6px;
+  color: var(--mint);
+  background: rgba(110, 231, 183, 0.08);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.timeline-link:hover {
+  background: var(--mint);
+  color: #071011;
+  border-color: var(--mint);
+  transform: translateY(-2px);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.project-link-btn:hover {
+  border-color: var(--mint);
+  color: var(--mint);
+  background: rgba(110, 231, 183, 0.1);
+  transform: translateY(-2px);
+}
+
+.metric-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 14px 0 8px;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-item strong {
+  color: var(--gold);
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.metric-item span {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+/* Founder & Recruiter Fast Track */
+.founder-box {
+  margin-bottom: 48px;
+  padding: 36px;
+  border: 1px solid rgba(246, 213, 122, 0.28);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(246, 213, 122, 0.09), transparent 22rem),
+    radial-gradient(circle at 90% 80%, rgba(110, 231, 183, 0.08), transparent 24rem),
+    linear-gradient(145deg, rgba(22, 36, 32, 0.94), rgba(10, 16, 18, 0.92));
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+}
+
+.founder-header {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+
+.founder-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: #fff;
+  margin-top: 8px;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.founder-pillar {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  transition: transform 190ms ease, border-color 190ms ease;
+}
+
+.founder-pillar:hover {
+  transform: translateY(-4px);
+  border-color: rgba(246, 213, 122, 0.45);
+  background: rgba(246, 213, 122, 0.05);
+}
+
+.founder-pillar span.pillar-num {
+  color: var(--gold);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.founder-pillar h4 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-family: var(--head);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.founder-pillar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.founder-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn.gold {
+  color: #071011;
+  background: linear-gradient(135deg, var(--gold), #f59e0b);
+  box-shadow: 0 16px 36px rgba(246, 213, 122, 0.24);
+}
+
+.btn.gold:hover {
+  background: linear-gradient(135deg, #fde68a, #fbbf24);
+}
+
+@media (max-width: 1040px) {
+  .founder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+  .founder-box {
+    padding: 22px;
+  }
+  .founder-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .founder-cta-row .btn {
+    width: 100%;
+  }
+}
+
