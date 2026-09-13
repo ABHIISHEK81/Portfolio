@@ -1,4 +1,4 @@
-const certificateBase = "file:///C:/Users/Lenovo/OneDrive/Desktop/ALL/Resume/Certification/";
+const certificateBase = "Certification/";
 
 const certificates = [
   {
@@ -512,37 +512,22 @@ document.getElementById("questionForm").addEventListener("submit", (event) => {
 });
 
 const revealElements = document.querySelectorAll(".reveal");
-
-// Immediately show elements in or near the viewport
-revealElements.forEach((el) => {
-  const rect = el.getBoundingClientRect();
-  if (rect.top < window.innerHeight + 100) {
-    el.classList.add("visible");
-  }
-});
+revealElements.forEach((element) => element.classList.add("visible"));
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.05, rootMargin: "0px 0px 50px 0px" });
 
   revealElements.forEach((element) => observer.observe(element));
-} else {
-  revealElements.forEach((element) => element.classList.add("visible"));
 }
 
-// Safety fallback: ensure all content becomes visible even if observer is delayed
-setTimeout(() => {
-  revealElements.forEach((element) => element.classList.add("visible"));
-}, 500);
-
 const canvas = document.getElementById("spaceCanvas");
-const ctx = canvas.getContext("2d");
+const ctx = canvas ? canvas.getContext("2d") : null;
 let particles = [];
 const scrollProgress = document.getElementById("scrollProgress");
 
@@ -563,6 +548,7 @@ window.addEventListener("scroll", updateScrollProgress, { passive: true });
 updateScrollProgress();
 
 function sizeCanvas() {
+  if (!canvas || !ctx) return;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   particles = Array.from({ length: Math.min(92, Math.floor(window.innerWidth / 16)) }, () => ({
@@ -575,6 +561,7 @@ function sizeCanvas() {
 }
 
 function drawSpace() {
+  if (!canvas || !ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   particles.forEach((p, index) => {
     p.x += p.vx * p.z;

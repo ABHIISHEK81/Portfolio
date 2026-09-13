@@ -1768,15 +1768,15 @@ h3 {
   background: rgba(125, 223, 198, 0.065);
 }
 
-.animate-ready .reveal {
-  opacity: 0.15;
-  transform: translateY(20px);
-  filter: blur(3px);
-  transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1), filter 600ms ease;
+.reveal {
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
 .hero .reveal,
-.animate-ready .reveal.visible {
+.reveal.visible,
+.animate-ready .reveal {
   opacity: 1 !important;
   transform: none !important;
   filter: none !important;
