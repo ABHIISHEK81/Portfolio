@@ -579,25 +579,1223 @@
       </div>
     </section>
 
-    <section class="section-shell section-alt" id="certificates">
+        <section class="section-shell section-alt" id="certificates">
       <div class="container">
         <div class="section-head compact reveal">
-          <p class="section-kicker">Verified Credentials (<span id="certificateCount">24</span>+ Badges &amp; Certificates)</p>
+          <p class="section-kicker">Verified Credentials (<span id="certificateCount">43</span> Badges &amp; Certificates)</p>
           <h2>Proof grouped by skill area</h2>
-          <p>Search or filter the verified certificate gallery by skill area: AI, analytics, cloud, simulations and leadership.</p>
+          <p>Search or filter all 43 verified credentials across Generative AI, Google Cloud Platform, Data Analytics, Enterprise Simulations, and Open-Source Leadership.</p>
         </div>
+
+        <div class="cert-spotlight-row reveal">
+          <article class="spotlight-card ai">
+            <span class="spotlight-badge">AI Milestone</span>
+            <div class="spotlight-content">
+              <h4>Google DeepMind</h4>
+              <p>Train a Small Language Model · Model Architectures, Loss &amp; Pre-training</p>
+            </div>
+          </article>
+          <article class="spotlight-card cloud">
+            <span class="spotlight-badge">GenAI Academy</span>
+            <div class="spotlight-content">
+              <h4>Google Cloud Vertex AI</h4>
+              <p>Gemini &amp; Imagen Multimodal RAG · Document AI &amp; Vector Search</p>
+            </div>
+          </article>
+          <article class="spotlight-card sim">
+            <span class="spotlight-badge">Corporate Simulations</span>
+            <div class="spotlight-content">
+              <h4>Tata Group &amp; Deloitte</h4>
+              <p>GenAI Data Analytics · 97.3% &amp; 99.2% Interpretation Precision</p>
+            </div>
+          </article>
+          <article class="spotlight-card lead">
+            <span class="spotlight-badge">Open Source Leader</span>
+            <div class="spotlight-content">
+              <h4>ECWoC 2026 Mentor</h4>
+              <p>Elite Coders Winter of Code · Official Program Mentor &amp; Leader</p>
+            </div>
+          </article>
+        </div>
+
         <div class="cert-controls reveal">
-          <input id="certSearch" type="search" placeholder="Search certificate name, issuer, skill or file..." />
+          <div class="cert-search-wrapper">
+            <span class="cert-search-icon">🔍</span>
+            <input id="certSearch" type="search" placeholder="Search 43 certificates by skill, issuer, or title..." aria-label="Search certificates" />
+          </div>
           <div class="filters" id="filters">
-            <button class="filter active" type="button" data-filter="all">All</button>
-            <button class="filter" type="button" data-filter="AI">AI</button>
-            <button class="filter" type="button" data-filter="Data Analytics">Analytics</button>
-            <button class="filter" type="button" data-filter="Google Cloud">Cloud</button>
-            <button class="filter" type="button" data-filter="Simulation">Simulations</button>
-            <button class="filter" type="button" data-filter="Leadership">Leadership</button>
+            <button class="filter active" type="button" data-filter="all">All (43)</button>
+            <button class="filter" type="button" data-filter="AI">GenAI &amp; ML (12)</button>
+            <button class="filter" type="button" data-filter="Google Cloud">Google Cloud (12)</button>
+            <button class="filter" type="button" data-filter="Data Analytics">Data Analytics (8)</button>
+            <button class="filter" type="button" data-filter="Simulation">Simulations (5)</button>
+            <button class="filter" type="button" data-filter="Leadership">Leadership (6)</button>
           </div>
         </div>
-        <div class="cert-grid" id="certGrid"></div>
+
+        <div class="cert-grid" id="certGrid">
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="0">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Google Cloud Gen AI Academy certificate">
+              <img src="Certification/Google Certificate.jpg" alt="Google Cloud Gen AI Academy - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Google Cloud Gen AI Academy</h3>
+              <p class="cert-desc">Completed Gen AI Academy work covering Vertex AI, Gemini APIs, Imagen, Streamlit and multimodal RAG patterns.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Shows hands-on preparation for building practical GenAI apps, chat tools and document intelligence projects.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="0">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Certificate.jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="1">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Build Real World AI Applications with Gemini and Imagen certificate">
+              <img src="Certification/Build Real World AI Applications with Gemini and Imagen.png" alt="Build Real World AI Applications with Gemini and Imagen - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Build Real World AI Applications with Gemini and Imagen</h3>
+              <p class="cert-desc">Built awareness of AI application workflows using Gemini for reasoning and Imagen for image generation.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Useful for creating AI-powered apps, multimodal demos and prompt-driven portfolio projects.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="1">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Build Real World AI Applications with Gemini and Imagen.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="2">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Inspect Rich Documents with Gemini Multimodality and Multimodal RAG certificate">
+              <img src="Certification/Google Certificate (2).jpg" alt="Inspect Rich Documents with Gemini Multimodality and Multimodal RAG - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Intermediate</span>
+              </div>
+              <h3 class="cert-title">Inspect Rich Documents with Gemini Multimodality and Multimodal RAG</h3>
+              <p class="cert-desc">Skill badge for rich document inspection with Gemini multimodality and retrieval augmented generation.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Supports document question answering, enterprise search, knowledge assistants and resume-worthy AI workflows.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="2">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Certificate (2).jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="3">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Introduction to Generative AI certificate">
+              <img src="Certification/Google Certificate (3).png" alt="Introduction to Generative AI - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Introduction to Generative AI</h3>
+              <p class="cert-desc">Introduced core GenAI concepts, model behavior, responsible use and common application areas.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Gives the vocabulary needed to understand modern AI systems and explain project choices clearly.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="3">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Certificate (3).png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google DeepMind" data-index="4">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Train a Small Language Model certificate">
+              <img src="Certification/Google DeepMind Train A Small Language Model.png" alt="Train a Small Language Model - Google DeepMind" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google DeepMind</span>
+                <span class="cert-level-badge">Advanced</span>
+              </div>
+              <h3 class="cert-title">Train a Small Language Model</h3>
+              <p class="cert-desc">Advanced learning around the process and concepts behind training a small language model.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Directly supports ML engineering understanding, model training logic and language AI fundamentals.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="4">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google DeepMind Train A Small Language Model.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="5">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Analyze Sentiment with Natural Language API certificate">
+              <img src="Certification/Analyze Sentiment with Natural Language API.png" alt="Analyze Sentiment with Natural Language API - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Analyze Sentiment with Natural Language API</h3>
+              <p class="cert-desc">Applied Natural Language API concepts to identify and score sentiment from text data.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Relevant for NLP, feedback analysis, social data mining and product analytics.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="5">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Analyze Sentiment with Natural Language API.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="6">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Automate Data Capture at Scale with Document AI certificate">
+              <img src="Certification/Automate Data Capture at Scale with Document AI.png" alt="Automate Data Capture at Scale with Document AI - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Automate Data Capture at Scale with Document AI</h3>
+              <p class="cert-desc">Learned document extraction and data capture workflows using Google Cloud Document AI.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Important for OCR, form processing, document automation and data extraction pipelines.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="6">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Automate Data Capture at Scale with Document AI.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="7">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Using the Google Cloud Speech API certificate">
+              <img src="Certification/Using the Google Cloud Speech API.png" alt="Using the Google Cloud Speech API - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Using the Google Cloud Speech API</h3>
+              <p class="cert-desc">Practiced Speech API concepts for converting audio into usable text data.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Supports speech analytics, accessibility features, voice interfaces and multimodal AI projects.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="7">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Using the Google Cloud Speech API.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="8">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Build Real World AI Applications with Gemini and Imagen Award certificate">
+              <img src="Certification/Google Certificate.png" alt="Build Real World AI Applications with Gemini and Imagen Award - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Build Real World AI Applications with Gemini and Imagen Award</h3>
+              <p class="cert-desc">Public award view for completing the Gemini and Imagen AI application skill badge.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Adds visible proof of hands-on GenAI app building for AI portfolio demonstrations.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="8">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Certificate.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="IBM Skills Network" data-index="9">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View IBM Introducing AI certificate">
+              <img src="Certification/IBM  Certificate.jpg" alt="IBM Introducing AI - IBM Skills Network" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">IBM Skills Network</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">IBM Introducing AI</h3>
+              <p class="cert-desc">Completed IBM's introductory artificial intelligence course through the Skills Network.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Strengthens AI fundamentals before advanced machine learning, NLP and GenAI work.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="9">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/IBM  Certificate.jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="GUVI / HCL" data-index="10">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View ChatGPT for Everyone certificate">
+              <img src="Certification/student_certificate_20250522130706.png" alt="ChatGPT for Everyone - GUVI / HCL" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">GUVI / HCL</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">ChatGPT for Everyone</h3>
+              <p class="cert-desc">Completed a practical ChatGPT certificate focused on everyday AI productivity and prompt use.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Improves prompt literacy, responsible AI usage and productivity for engineering tasks.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="10">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/student_certificate_20250522130706.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="Google Cloud" data-index="11">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Analyze BigQuery Data in Connected Sheets certificate">
+              <img src="Certification/Analyze BigQuery Data in Connected Sheets.png" alt="Analyze BigQuery Data in Connected Sheets - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Analyze BigQuery Data in Connected Sheets</h3>
+              <p class="cert-desc">Analyzed BigQuery data through connected spreadsheet workflows.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Good for cloud analytics, quick exploration and business-friendly reporting.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="11">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Analyze BigQuery Data in Connected Sheets.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="Google Cloud" data-index="12">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View App Building with AppSheet certificate">
+              <img src="Certification/App Building with AppSheet.png" alt="App Building with AppSheet - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">App Building with AppSheet</h3>
+              <p class="cert-desc">Built low-code application workflows with AppSheet.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Useful for quickly creating data collection tools, dashboards and prototypes for college projects.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="12">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/App Building with AppSheet.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-ai reveal visible" data-category="AI" data-issuer="Google Cloud" data-index="13">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Inspect Rich Documents with Gemini Multimodality and Multimodal RAG Award certificate">
+              <img src="Certification/Google Certificate (2).png" alt="Inspect Rich Documents with Gemini Multimodality and Multimodal RAG Award - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Intermediate</span>
+              </div>
+              <h3 class="cert-title">Inspect Rich Documents with Gemini Multimodality and Multimodal RAG Award</h3>
+              <p class="cert-desc">Public award view for the Gemini multimodality and multimodal RAG skill badge.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">AI</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Reinforces document AI, retrieval workflows and applied GenAI solution design.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="13">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Certificate (2).png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="Google Cloud" data-index="14">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Manage Data Models in Looker certificate">
+              <img src="Certification/Manage Data Models in Looker.png" alt="Manage Data Models in Looker - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Intermediate</span>
+              </div>
+              <h3 class="cert-title">Manage Data Models in Looker</h3>
+              <p class="cert-desc">Worked with semantic data models and Looker analytics concepts.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Useful for analytics engineering, governed dashboards and BI model design.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="14">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Manage Data Models in Looker.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="IBM SkillsBuild" data-index="15">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View IBM Enterprise Data Science in Practice certificate">
+              <img src="Certification/Screenshot 2025-12-01 001846.png" alt="IBM Enterprise Data Science in Practice - IBM SkillsBuild" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">IBM SkillsBuild</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">IBM Enterprise Data Science in Practice</h3>
+              <p class="cert-desc">Credential focused on enterprise data science practice.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Connects academic data science concepts with business workflows.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="15">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2025-12-01 001846.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="IBM SkillsBuild" data-index="16">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View IBM Data Fundamentals certificate">
+              <img src="Certification/Screenshot 2025-12-01 002735.png" alt="IBM Data Fundamentals - IBM SkillsBuild" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">IBM SkillsBuild</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">IBM Data Fundamentals</h3>
+              <p class="cert-desc">Completed a foundational IBM data credential.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Builds core knowledge in data quality, data types, analysis and interpretation.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="16">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2025-12-01 002735.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="HP Foundation" data-index="17">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View HP LIFE Data Science &amp; Analytics certificate">
+              <img src="Certification/Screenshot 2025-12-18 212629.png" alt="HP LIFE Data Science &amp; Analytics - HP Foundation" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">HP Foundation</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">HP LIFE Data Science &amp; Analytics</h3>
+              <p class="cert-desc">Completed HP LIFE's Data Science &amp; Analytics course.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Explains analytics practices, methods and business value of data-driven approaches.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="17">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2025-12-18 212629.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="Cisco Networking Academy" data-index="18">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Cisco Data Analytics Essentials certificate">
+              <img src="Certification/Screenshot 2025-12-25 181911.png" alt="Cisco Data Analytics Essentials - Cisco Networking Academy" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Cisco Networking Academy</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Cisco Data Analytics Essentials</h3>
+              <p class="cert-desc">Completed Cisco Networking Academy's Data Analytics Essentials credential.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Covers the analytics process, data preparation, Excel, SQL, Tableau and project portfolio sharing.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="18">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2025-12-25 181911.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-analytics reveal visible" data-category="Data Analytics" data-issuer="Cisco Networking Academy" data-index="19">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Cisco Data Analytics Essentials Course Completion certificate">
+              <img src="Certification/Screenshot 2026-05-09 154323.png" alt="Cisco Data Analytics Essentials Course Completion - Cisco Networking Academy" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Cisco Networking Academy</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Cisco Data Analytics Essentials Course Completion</h3>
+              <p class="cert-desc">Full course completion certificate for Cisco Data Analytics Essentials, issued December 24, 2025.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Data Analytics</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Confirms student-level analytics skills in data value, data characteristics, statistical preparation and visualization tools.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="19">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2026-05-09 154323.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="20">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Get Started with Cloud Storage certificate">
+              <img src="Certification/Get Started with Cloud Storage.png" alt="Get Started with Cloud Storage - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Get Started with Cloud Storage</h3>
+              <p class="cert-desc">Learned object storage operations on Google Cloud.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Essential for datasets, model artifacts, logs and data lake architecture.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="20">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Get Started with Cloud Storage.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="21">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Create a Streaming Data Lake on Cloud Storage certificate">
+              <img src="Certification/Create a Streaming Data Lake on Cloud Storage.png" alt="Create a Streaming Data Lake on Cloud Storage - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Create a Streaming Data Lake on Cloud Storage</h3>
+              <p class="cert-desc">Built patterns for streaming data lakes on Cloud Storage.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Supports data engineering, event ingestion and scalable storage design.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="21">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Create a Streaming Data Lake on Cloud Storage.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="22">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Get Started with Dataplex certificate">
+              <img src="Certification/Get Started with Dataplex.png" alt="Get Started with Dataplex - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Get Started with Dataplex</h3>
+              <p class="cert-desc">Explored Dataplex for managing distributed cloud data.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Useful for governance, cataloging and lifecycle management in analytics systems.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="22">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Get Started with Dataplex.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="23">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Get Started with Pub/Sub certificate">
+              <img src="Certification/Get Started with Pub & Sub.png" alt="Get Started with Pub/Sub - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Get Started with Pub/Sub</h3>
+              <p class="cert-desc">Learned publish-subscribe messaging patterns on Google Cloud.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Important for streaming pipelines, event ingestion and real-time analytics.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="23">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Get Started with Pub & Sub.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="24">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Get Started with Eventarc certificate">
+              <img src="Certification/Get Started with Eventarc.png" alt="Get Started with Eventarc - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Get Started with Eventarc</h3>
+              <p class="cert-desc">Practiced event-driven architecture concepts using Eventarc.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Useful for serverless data workflows and automated cloud triggers.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="24">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Get Started with Eventarc.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="25">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View App Engine: 3 Ways certificate">
+              <img src="Certification/App Engine 3 Ways.png" alt="App Engine: 3 Ways - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">App Engine: 3 Ways</h3>
+              <p class="cert-desc">Explored deployment approaches for applications on App Engine.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Helps deploy data apps, APIs and ML demos on cloud infrastructure.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="25">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/App Engine 3 Ways.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="26">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Google Cloud Infrastructure for Azure Professionals certificate">
+              <img src="Certification/Google Cloud Infrastructure for Azure Professionals.png" alt="Google Cloud Infrastructure for Azure Professionals - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Intermediate</span>
+              </div>
+              <h3 class="cert-title">Google Cloud Infrastructure for Azure Professionals</h3>
+              <p class="cert-desc">Intermediate infrastructure badge comparing Google Cloud and Azure concepts.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Improves cloud architecture understanding across platforms.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="26">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Google Cloud Infrastructure for Azure Professionals.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="27">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Monitor and Log with Google Cloud Observability certificate">
+              <img src="Certification/Monitor and Log with Google Cloud Observability.png" alt="Monitor and Log with Google Cloud Observability - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Monitor and Log with Google Cloud Observability</h3>
+              <p class="cert-desc">Learned monitoring and logging concepts on Google Cloud.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Operational awareness matters when deploying dashboards, APIs and ML services.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="27">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Monitor and Log with Google Cloud Observability.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="28">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Store, Process and Manage Data on Google Cloud certificate">
+              <img src="Certification/Store, Process, and Manage Data on Google Cloud - Console.png" alt="Store, Process and Manage Data on Google Cloud - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Store, Process and Manage Data on Google Cloud</h3>
+              <p class="cert-desc">Practiced console workflows for storing, processing and managing data.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Maps directly to cloud data handling in a Data Science curriculum.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="28">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Store, Process, and Manage Data on Google Cloud - Console.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="29">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Get Started with Pub/Sub Award certificate">
+              <img src="Certification/Screenshot 2026-01-18 195820.png" alt="Get Started with Pub/Sub Award - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Get Started with Pub/Sub Award</h3>
+              <p class="cert-desc">Public award view for the Google Cloud Pub/Sub skill badge.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Reinforces real-time data streaming concepts needed for event-driven data systems.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="29">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2026-01-18 195820.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="30">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Monitoring in Google Cloud certificate">
+              <img src="Certification/Monitoring in Google Cloud.png" alt="Monitoring in Google Cloud - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">Monitoring in Google Cloud</h3>
+              <p class="cert-desc">Completed badge for monitoring Google Cloud resources and service health.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Helps maintain reliable analytics dashboards, APIs and deployed data applications.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="30">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Monitoring in Google Cloud.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-cloud reveal visible" data-category="Google Cloud" data-issuer="Google Cloud" data-index="31">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View The Basics of Google Cloud Compute certificate">
+              <img src="Certification/The Basics of Google Cloud Compute.png" alt="The Basics of Google Cloud Compute - Google Cloud" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud</span>
+                <span class="cert-level-badge">Introductory</span>
+              </div>
+              <h3 class="cert-title">The Basics of Google Cloud Compute</h3>
+              <p class="cert-desc">Completed foundational Google Cloud Compute learning.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Google Cloud</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Compute knowledge is needed to run data processing jobs, APIs and model workloads.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="31">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/The Basics of Google Cloud Compute.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-sim reveal visible" data-category="Simulation" data-issuer="Tata / Forage" data-index="32">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Tata GenAI Powered Data Analytics Job Simulation certificate">
+              <img src="Certification/Screenshot 2025-11-29 214113.png" alt="Tata GenAI Powered Data Analytics Job Simulation - Tata / Forage" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Tata / Forage</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Tata GenAI Powered Data Analytics Job Simulation</h3>
+              <p class="cert-desc">Completed Tata's Forage simulation covering exploratory analysis, risk profiling, delinquency prediction and AI-led collections strategy.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Simulation</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Excellent fit because it combines GenAI, analytics, business reporting and strategy storytelling.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="32">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Screenshot 2025-11-29 214113.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-sim reveal visible" data-category="Simulation" data-issuer="Tata / Forage" data-index="33">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Tata GenAI Powered Data Analytics Job Simulation Certificate certificate">
+              <img src="Certification/Internship Certificate.jpg" alt="Tata GenAI Powered Data Analytics Job Simulation Certificate - Tata / Forage" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Tata / Forage</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Tata GenAI Powered Data Analytics Job Simulation Certificate</h3>
+              <p class="cert-desc">Forage certificate for Tata's GenAI data analytics simulation, completed June 18, 2025.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Simulation</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Adds practical proof of exploratory analysis, AI strategy, business storytelling and risk-focused analytics.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="33">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Internship Certificate.jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-sim reveal visible" data-category="Simulation" data-issuer="Electronic Arts / Forage" data-index="34">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Electronic Arts Software Engineering Job Simulation certificate">
+              <img src="Certification/Internship Certificate (2).jpg" alt="Electronic Arts Software Engineering Job Simulation - Electronic Arts / Forage" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Electronic Arts / Forage</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Electronic Arts Software Engineering Job Simulation</h3>
+              <p class="cert-desc">Completed EA's software engineering simulation covering feature proposal, game object design, inventory improvement and live bug fixing.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Simulation</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Strengthens software design, debugging, documentation and engineering workflow discipline.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="34">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Internship Certificate (2).jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-sim reveal visible" data-category="Simulation" data-issuer="Deloitte / Forage" data-index="35">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Deloitte Data Analytics Job Simulation certificate">
+              <img src="Certification/Internship Certificate (3).jpg" alt="Deloitte Data Analytics Job Simulation - Deloitte / Forage" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Deloitte / Forage</span>
+                <span class="cert-level-badge">Completion</span>
+              </div>
+              <h3 class="cert-title">Deloitte Data Analytics Job Simulation</h3>
+              <p class="cert-desc">Completed Deloitte's Forage simulation with practical tasks in data analysis and forensic technology.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Simulation</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Connects classroom analytics to professional investigation, reporting and business decision support use cases.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="35">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Internship Certificate (3).jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="Google Cloud / Hack2skill" data-index="36">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Gen AI Exchange Hackathon certificate">
+              <img src="Certification/Hack2skill-Certificate.jpg" alt="Gen AI Exchange Hackathon - Google Cloud / Hack2skill" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Google Cloud / Hack2skill</span>
+                <span class="cert-level-badge">Participation</span>
+              </div>
+              <h3 class="cert-title">Gen AI Exchange Hackathon</h3>
+              <p class="cert-desc">Submitted a prototype under the Personalized Career and Skills Advisor problem statement.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Connects GenAI with career analytics, recommender thinking and product ideation.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="36">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/Hack2skill-Certificate.jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="GUVI / HCL" data-index="37">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View GUVI HCL Hackathon Event certificate">
+              <img src="Certification/GuviCertification - PL9411E10J71DjX75f.png" alt="GUVI HCL Hackathon Event - GUVI / HCL" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">GUVI / HCL</span>
+                <span class="cert-level-badge">Participation</span>
+              </div>
+              <h3 class="cert-title">GUVI HCL Hackathon Event</h3>
+              <p class="cert-desc">Participated in a hackathon during AKTU AI Tech Confluence 2025.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Demonstrates rapid prototyping, competition experience and technical teamwork.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="37">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/GuviCertification - PL9411E10J71DjX75f.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="Elite Coders" data-index="38">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View ECWoC 2026 Mentor ID certificate">
+              <img src="Certification/ECWoC-2026-ID-ABHISHEK-SHARMA.png" alt="ECWoC 2026 Mentor ID - Elite Coders" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Elite Coders</span>
+                <span class="cert-level-badge">Mentor</span>
+              </div>
+              <h3 class="cert-title">ECWoC 2026 Mentor ID</h3>
+              <p class="cert-desc">Official mentor identity for Elite Coders Winter of Code 2026.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Shows open-source leadership, mentoring, peer support and collaboration skills.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="38">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/ECWoC-2026-ID-ABHISHEK-SHARMA.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="Elite Coders" data-index="39">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Elite Coders Winter of Code Mentor Verification certificate">
+              <img src="Certification/ECWoC-Mentor-ID-Template.jpg" alt="Elite Coders Winter of Code Mentor Verification - Elite Coders" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Elite Coders</span>
+                <span class="cert-level-badge">Mentor</span>
+              </div>
+              <h3 class="cert-title">Elite Coders Winter of Code Mentor Verification</h3>
+              <p class="cert-desc">Verified ECWoC mentor badge template showing the official mentor role and QR verification.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Adds visual proof of community contribution, open-source mentoring and responsibility in a technical program.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="39">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/ECWoC-Mentor-ID-Template.jpg" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="Internshala" data-index="40">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Internshala Volunteering Internship Selection certificate">
+              <img src="Certification/7a0pt1hxc3z.png" alt="Internshala Volunteering Internship Selection - Internshala" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Internshala</span>
+                <span class="cert-level-badge">Selection</span>
+              </div>
+              <h3 class="cert-title">Internshala Volunteering Internship Selection</h3>
+              <p class="cert-desc">Selected for a volunteering internship at She Can Foundation through Internshala.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Shows initiative, communication and responsibility for team-oriented work.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="40">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/7a0pt1hxc3z.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-lead reveal visible" data-category="Leadership" data-issuer="Barrownz Learning Academy" data-index="41">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View Technical Workshop Participation certificate">
+              <img src="Certification/original_cbfd66ec-077c-4681-99cc-d5862beda96f_Screenshot_20250521-203441.png" alt="Technical Workshop Participation - Barrownz Learning Academy" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">Barrownz Learning Academy</span>
+                <span class="cert-level-badge">Participation</span>
+              </div>
+              <h3 class="cert-title">Technical Workshop Participation</h3>
+              <p class="cert-desc">Participated in a technical workshop focused on professional upskilling.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Leadership</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Shows continuous learning and willingness to attend technical development programs.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="41">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/original_cbfd66ec-077c-4681-99cc-d5862beda96f_Screenshot_20250521-203441.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card cat-sim reveal visible" data-category="Simulation" data-issuer="SkillEcted" data-index="42">
+            <div class="cert-media" tabindex="0" role="button" aria-label="View RESTful APIs with Node.js certificate">
+              <img src="Certification/1756042031278-certificate.png" alt="RESTful APIs with Node.js - SkillEcted" loading="lazy" />
+              <div class="cert-hover-overlay">
+                <span class="cert-expand-icon">🔍 View Fullscreen</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-top">
+                <span class="cert-issuer-badge">SkillEcted</span>
+                <span class="cert-level-badge">Participation</span>
+              </div>
+              <h3 class="cert-title">RESTful APIs with Node.js</h3>
+              <p class="cert-desc">Webinar on RESTful APIs with Node.js and frontend-backend connection.</p>
+              <div class="cert-tags">
+                <span class="cert-category-chip">Simulation</span>
+              </div>
+              <div class="cert-proof-box">
+                <span class="proof-label">Skill Proof</span>
+                <p class="proof-text">Backend API knowledge helps serve ML models, dashboards and prediction services.</p>
+              </div>
+              <div class="cert-actions">
+                <button class="cert-btn-preview" type="button" data-index="42">⚡ View Preview</button>
+                <a class="cert-btn-open" href="Certification/1756042031278-certificate.png" target="_blank" rel="noopener">↗ Open File</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

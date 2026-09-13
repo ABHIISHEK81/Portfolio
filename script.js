@@ -400,52 +400,8 @@ document.documentElement.classList.add("animate-ready");
 const certCountEl = document.getElementById("certificateCount");
 if (certCountEl) certCountEl.textContent = certificates.length;
 
-const fileUrl = (file) => certificateBase + encodeURIComponent(file).replace(/%26/g, "&");
+const fileUrl = (file) => certificateBase + file;
 const isPdf = (file) => file.toLowerCase().endsWith(".pdf");
-
-function renderCertificates() {
-  const query = certSearch.value.trim().toLowerCase();
-  const visible = certificates.filter((cert) => {
-    const categoryMatch = activeFilter === "all" || cert.category === activeFilter || cert.issuer.includes(activeFilter);
-    const textMatch = Object.values(cert).join(" ").toLowerCase().includes(query);
-    return categoryMatch && textMatch;
-  });
-
-  certGrid.innerHTML = "";
-
-  if (!visible.length) {
-    certGrid.innerHTML = `<article class="glass-card"><h3>No matching certificate</h3><p>Try another category or search term.</p></article>`;
-    return;
-  }
-
-  visible.forEach((cert) => {
-    const card = document.createElement("article");
-    card.className = "cert-card reveal visible";
-    const url = fileUrl(cert.file);
-
-    card.innerHTML = `
-      <div class="cert-media">
-        ${isPdf(cert.file)
-          ? `<div class="pdf-preview"><strong>PDF Credential</strong><br>${cert.file}</div>`
-          : `<img src="${url}" alt="${cert.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;pdf-preview&quot;>Preview unavailable<br>${cert.file}</div>'">`}
-      </div>
-      <div class="cert-body">
-        <div class="cert-top"><span class="issuer">${cert.issuer}</span><span class="level">${cert.level}</span></div>
-        <h3>${cert.title}</h3>
-        <p>${cert.description}</p>
-        <div class="cert-chip">${cert.category}</div>
-        <div class="cert-need"><strong>Skill proof:</strong> ${cert.need}</div>
-        <div class="cert-actions">
-          <button class="mini-btn" type="button">Preview</button>
-          <a class="mini-btn" href="${url}" target="_blank" rel="noopener">Open</a>
-        </div>
-      </div>
-    `;
-
-    card.querySelector("button").addEventListener("click", () => openCertificate(cert));
-    certGrid.appendChild(card);
-  });
-}
 
 function openCertificate(cert) {
   const url = fileUrl(cert.file);
@@ -469,16 +425,65 @@ function closeCertificate() {
   document.body.classList.remove("modal-open");
 }
 
+function filterCertificates() {
+  const query = certSearch ? certSearch.value.trim().toLowerCase() : "";
+  const cards = document.querySelectorAll(".cert-card");
+  let visibleCount = 0;
+
+  cards.forEach((card) => {
+    const category = card.dataset.category || "";
+    const issuer = card.dataset.issuer || "";
+    const text = card.textContent.toLowerCase();
+
+    const categoryMatch = activeFilter === "all" || category === activeFilter || issuer.includes(activeFilter);
+    const textMatch = !query || text.includes(query);
+
+    if (categoryMatch && textMatch) {
+      card.style.display = "flex";
+      visibleCount++;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  if (certCountEl) certCountEl.textContent = visibleCount;
+}
+
+// Bind click events on all pre-rendered certificate cards
+document.querySelectorAll(".cert-card").forEach((card) => {
+  const index = parseInt(card.dataset.index, 10);
+  const cert = certificates[index];
+  if (!cert) return;
+
+  const media = card.querySelector(".cert-media");
+  if (media) {
+    media.addEventListener("click", () => openCertificate(cert));
+    media.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openCertificate(cert);
+      }
+    });
+  }
+
+  const previewBtn = card.querySelector(".cert-btn-preview");
+  if (previewBtn) {
+    previewBtn.addEventListener("click", () => openCertificate(cert));
+  }
+});
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     filters.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
     activeFilter = button.dataset.filter;
-    renderCertificates();
+    filterCertificates();
   });
 });
 
-certSearch.addEventListener("input", renderCertificates);
+if (certSearch) {
+  certSearch.addEventListener("input", filterCertificates);
+}
 document.getElementById("closeModal").addEventListener("click", closeCertificate);
 modal.addEventListener("click", (event) => {
   if (event.target === modal) closeCertificate();
@@ -609,4 +614,4 @@ document.querySelectorAll(".tilt-card").forEach((card) => {
 window.addEventListener("resize", sizeCanvas);
 sizeCanvas();
 drawSpace();
-renderCertificates();
+filterCertificates();
