@@ -397,7 +397,8 @@ const modal = document.getElementById("certModal");
 let activeFilter = "all";
 
 document.documentElement.classList.add("animate-ready");
-document.getElementById("certificateCount").textContent = certificates.length;
+const certCountEl = document.getElementById("certificateCount");
+if (certCountEl) certCountEl.textContent = certificates.length;
 
 const fileUrl = (file) => certificateBase + encodeURIComponent(file).replace(/%26/g, "&");
 const isPdf = (file) => file.toLowerCase().endsWith(".pdf");
